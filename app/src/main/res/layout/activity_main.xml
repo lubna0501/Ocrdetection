@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageselector"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription,MissingConstraints,RtlHardcoded" />
+
+    <Button
+        android:id="@+id/buttonselector"
+        android:layout_below="@+id/imageselector"
+        android:layout_width="307dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="select image"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/buttonselector"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:ignore="MissingConstraints">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+            <TextView
+                android:id="@+id/textresult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints,ScrollViewSize" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
