@@ -135,35 +135,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+ 
 
 
-
-//    private Uri getImageUri(Bitmap bitmap) {
-//
-//        try {
-//            File imagesDir = new File(getExternalFilesDir(null), "Images");
-//            if (!imagesDir.exists()) {
-//                imagesDir.mkdirs();
-//            }
-//
-//            File imageFile = new File(imagesDir, "captured_image.jpg");
-//            FileOutputStream fileOutputStream = new FileOutputStream(imageFile);
-//
-//            // Convert the Bitmap to a byte array
-//            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-//            bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-//            byte[] byteArray = byteArrayOutputStream.toByteArray();
-//
-//            // Write the byte array to the file
-//            fileOutputStream.write(byteArray);
-//            fileOutputStream.close();
-//
-//            return Uri.fromFile(imageFile);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//            return null;
-//        }
-//    }
     private void performTextRecognition(Uri imageUri) {
         try {
             Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(),imageUri);
