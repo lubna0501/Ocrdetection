@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageselector"
         android:layout_width="300dp"
-        android:layout_height="150dp"
+        android:layout_height="250dp"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
